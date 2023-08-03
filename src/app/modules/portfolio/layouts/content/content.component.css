@@ -1,0 +1,22 @@
+.header-transparent {
+    background-color: transparent;
+    /* Otros estilos para el header transparente */
+  }
+  
+  /* Estilos adicionales para el header con fondo cuando se desplaza */
+  header {
+    background-color: #fff;
+    border-bottom: 1px solid  #ececec ;
+  }
+
+  ::ng-deep .ant-back-top-content {
+    position: inherit;
+    bottom: 3.4rem !important;
+    right: 4rem;
+    background-color: rgb(201, 200, 200);
+    color: rgb(56, 56, 56);
+  }
+  ::ng-deep .ant-back-top-content:hover{
+    color: white;
+    background-color: #38BDF8;
+  }

@@ -1,0 +1,28 @@
+.actived{
+    color:#141414;
+
+}
+
+@media not all and (min-width: 1024px) {
+    .menu {
+        display: none;
+        transition: transform 1s;
+    }
+    .menu-hidden{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        background-color: #f3f3f3f8;
+        right: 0px;
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        padding: 3rem ;
+        transition: transform 1s;
+        
+    }
+
+    span{
+        z-index: 999;
+    }
+}

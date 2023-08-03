@@ -1,0 +1,16 @@
+<div class="h-full justify-between items-center flex xl:px-20 md:px-5 max-lg:px-8">
+    <div class="font-bold">
+        <h1 class="text-xl uppercase"> <a href="#"> < Jhoel Silvestre /> </a> </h1>
+
+    </div>
+
+<ul class="menu flex gap-3" #menuRef [ngClass]="{'menu-hidden': isMenuHidden}">
+    <li *ngFor="let item of items()" class="font-semibold text-gray-400 hover:text-slate-950">
+      <a [routerLink]="[item.url]" routerLinkActive="actived">{{ item.name }}</a>
+    </li>
+    
+  </ul>
+  
+  <span  (click)="toggleMenu()" class="pi {{ isMenuHidden ? ' pi-times' : 'pi-bars' }} text-xl cursor-pointer hidden max-lg:block"></span>  
+</div>
+

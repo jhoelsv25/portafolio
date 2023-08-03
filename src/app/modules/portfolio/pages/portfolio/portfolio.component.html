@@ -1,0 +1,81 @@
+<div class="flex justify-center">
+
+    <div class="container flex justify-center flex-col  ">
+        <div class="flex container flex-col my-10">
+            <h1
+                class="text-7xl  text-center text-indigo-500 font-bold tracking-wide  max-sm:text-center max-sm:text-4xl">
+                Portaflio.</h1>
+            <nav class=" flex justify-center gap-5 mt-10">
+                <button type="button" (click)="btnAll()"
+                    [ngStyle]="{'background': currentFilter  == 'all' ? backround :'','color': currentFilter == 'all' ? color: '' }"
+                    class="rounded-md shadow-lg border-[2px] border-indigo-400 py-1 px-2 font-semibold hover:shadow-xl hover:bg-indigo-400 hover:text-white outline-1">All</button>
+                <button type="button" (click)="btnFilter('web')"
+                    [ngStyle]="{'background': currentFilter  == 'web' ? backround :'', 'color': currentFilter=='web' ? color : '' }"
+                    class="rounded-md shadow-lg border-[2px] border-indigo-400 py-1 px-2 font-semibold hover:shadow-xl hover:bg-indigo-400 hover:text-white outline-1">Web
+                    Design</button>
+                <button type="button" (click)="btnFilter('develop')"
+                    [ngStyle]="{'background': currentFilter  == 'develop' ? backround :'', 'color': currentFilter=='develop' ? color : '' }"
+                    class="rounded-md shadow-lg border-[2px] border-indigo-400 py-1 px-2 font-semibold hover:shadow-xl hover:bg-indigo-400 hover:text-white outline-1">Development</button>
+                <button type="button" (click)="btnFilter('others')"
+                    [ngStyle]="{'background': currentFilter  == 'others' ? backround :'', 'color': currentFilter=='others' ? color : '' }"
+                    class="rounded-md shadow-lg border-[2px] border-indigo-400 py-1 px-2 font-semibold hover:shadow-xl hover:bg-indigo-400 hover:text-white outline-1">Others</button>
+            </nav>
+        </div>
+        <div class="flex justify-center my-10">
+
+            <div *ngIf="portfolios().length > 0 else: noEncontrado" class=" flex flex-wrap justify-center gap-5">
+
+                <div *ngFor="let portfolio of portfolios()"
+                    class="card flex flex-col rounded-md shadow-md hover:shadow-xl">
+                    <img class="image rounded-t-md" [src]="portfolio.urlImages" [alt]="">
+
+                    <div class="content">
+
+                        <h2 class=" text-white  text-base">{{portfolio.title }}</h2>
+                        <div class="flex gap-5">
+                            <i class="text-white text-xl hover:text-cyan-300 pi pi-github" nz-tooltip
+                                nzTooltipTitle="Ir al codigo"><a [href]="portfolio.urlCod" target="_blank"></a></i>
+                            <i (click)="preview(portfolio.urlImages)"
+                                class="text-white text-xl hover:text-cyan-300 pi pi-eye" nz-tooltip
+                                nzTooltipTitle="Pre Visualizar"></i>
+                        </div>
+                    </div>
+                    <div class="footer flex justify-between px-3 items-end py-2">
+                        <span class="flex">
+                            <img *ngFor="let svg of portfolio.urlIcon" [src]="svg.url" [alt]="svg.name" nz-tooltip
+                                [nzTooltipTitle]="svg.name" width="50" height="50">
+                        </span>
+                        <i class="text-lg text-indigo-500 cursor-pointer pi pi-external-link" nz-tooltip
+                            nzTooltipTitle="Visitar la web"><a [href]="portfolio.url" target="_blank"></a></i>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+
+            <ng-template #noEncontrado>
+                <div class="flex flex-col justify-center items-center gap-5">
+                    <h1 class="text-5xl font-bold text-indigo-400">Ups..</h1>
+                    <strong class="text-3xl font-semibold text-slate-600">No se Encontraron para este
+                        Portaflios</strong>
+                </div>
+
+            </ng-template>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+<ng-template #customPreviewTemplate let-data="data" let-index="index">
+    <div class="flex items-center justify-center h-screen">
+        <img [src]="data.src" [width]="data.width" [height]="data.height" [alt]="data.alt"
+            class="max-h-full max-w-full">
+    </div>
+</ng-template>

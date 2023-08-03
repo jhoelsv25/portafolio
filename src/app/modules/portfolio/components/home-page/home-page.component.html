@@ -1,0 +1,40 @@
+<div class="h-full flex flex-col items-center gap-2 bg-white container max-sm:items-center max-sm:px-5">
+    <span class="flex container justify-center gap-5 max-text-lg:flex-col max-lg:flex-col">
+        <strong class="text-8xl font-bold tracking-tight text-indigo-200 max-lg:text-center max-sm:text-5xl">Hi
+            there!</strong>
+        <h1 class="text-8xl font-bold tracking-tight text-indigo-600 max-lg:text-center max-sm:text-5xl">Jhoel
+            Silvestre.</h1>
+    </span>
+
+    <h2
+        class="text-8xl container text-center font-bold tracking-tight text-indigo-800 max-lg:text-center max-sm:text-5xl">
+        Develop Front.</h2>
+
+    <p class="text-2xl font-medium container mt-8 px-10 text-center text-slate-500 lg:w-8/12 lg:mx-auto">
+        Desarrollador frontend con
+        habilidades en HTML, CSS y JavaScript. Apasionado por aprender y enfrentar desafíos creativos.
+        Actualizado en últimas tendencias.</p>
+
+    <div class="flex gap-3 mt-8 max-sm:flex-col max-sm:w-full">
+        <button
+            class=" w-52  text-lg justify-center flex items-center gap-2 rounded-lg bg-gray-600 hover:bg-gray-400 text-white font-semibold py-2.5 px-4 max-sm:w-full">
+
+            Contactar
+
+            <i class=" pi pi-caret-right "></i>
+        </button>
+        <button
+            class=" w-52 text-lg justify-center flex items-center gap-2 rounded-lg border-indigo-500 border-2 shadow-lg shadow-indigo-500/50 text-black hover:bg-indigo-500 hover:text-white font-semibold py-2.5 px-4 max-sm:w-full">
+            <i class=" pi  pi-cloud-download"></i>
+            Descargar cv
+        </button>
+    </div>
+    <div class="flex flex-col mt-32 max-sm:mt-10">
+        <h2 class="max-sm:text-center title tracking-widest text-slate-500">REDES SOCIALES CON LAS QUE PUEDAS CONTACTARME</h2>
+        <div class="flex gap-5 w-full justify-center my-8">
+            <span *ngFor="let social of socials()" class="text-3xl text-slate-500 hover:text-slate-700  cursor-pointer"
+                 > <a [nzTooltipTitle]="social.name" nzTooltipPlacement="bottom"  nz-tooltip [href]="social.url" target="_blank" [ngClass]="social.icon"></a></span>
+    
+        </div>
+    </div>
+</div>
