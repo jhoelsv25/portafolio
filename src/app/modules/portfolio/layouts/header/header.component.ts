@@ -20,20 +20,4 @@ export class HeaderComponent {
     this.isIconBars = !this.isIconBars;
   }
 
-  /* @HostListener('document:click', ['$event'])
-  onDocumentClick(event: MouseEvent) {
-    const clickedElement = event.target as HTMLElement;
-    const menu = this.menuRef?.nativeElement;
-
-    const isClickedOnMenu = menu && menu.contains(clickedElement);
-
-    if (this.isMenuHidden && isClickedOnMenu) {
-      // Si el menú está oculto y el clic se produce dentro del menú, no hacer nada.
-      return;
-    }
-
-    // Si el clic se produce fuera del menú, ocultarlo
-    this.isMenuHidden = true;
-  } */
-
 }

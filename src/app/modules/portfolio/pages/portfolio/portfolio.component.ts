@@ -10,34 +10,33 @@ import { NzImageService } from 'ng-zorro-antd/image';
 })
 export class PortfolioComponent implements OnInit {
   private portfolioService = inject(PortfolioService);
-  private nzImageService = inject(NzImageService)
-  public portfolios = computed(() => this.portfolioService.allPortfolio) ;
-  public backround = '#818CF8'
-  public color= '#FFF'
-  public currentFilter=''
-  
+  private nzImageService = inject(NzImageService);
+  public portfolios = computed(() => this.portfolioService.allPortfolio);
+  public backround = '#818CF8';
+  public color = '#FFF';
+  public currentFilter = '';
 
   ngOnInit(): void {
-      this.btnAll()
+    this.btnAll();
   }
   btnAll() {
     this.portfolioService.allFilter();
-   this.currentFilter = 'all';
+    this.currentFilter = 'all';
   }
   btnFilter(categ: string) {
-    this.currentFilter = categ
-    this.portfolioService.filterPort(categ)
-    
+    this.currentFilter = categ;
+    this.portfolioService.filterPort(categ);
   }
-  preview(image:string){
-    console.log(image)
+  preview(image: string) {
+    console.log(image);
     const images = [
       {
         src: image,
         /* width: '200px',
         height: '200px',
         alt: 'ng-zorro' */
-      },]
-    this.nzImageService.preview(images, { nzZoom:1, nzRotate:0})
+      },
+    ];
+    this.nzImageService.preview(images, { nzZoom: 1, nzRotate: 0 });
   }
 }

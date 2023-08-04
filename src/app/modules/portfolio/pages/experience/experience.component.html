@@ -11,13 +11,13 @@
         <div class="flex justify-center mt-10">
             <nz-timeline nzMode="alternate" class="xl:w-8/12 ">
                 <nz-timeline-item *ngFor="let experience of experiences()" nzColor="gray" [nzLabel]="experience.dateStart"  >
-                    <div class="bg-white   p-6 rounded-lg shadow-md  hover:shadow-xl">
+                    <div class="bg-white dark:bg-slate-700  p-6 rounded-lg shadow-md  hover:shadow-xl">
                         <span class="flex justify-between">
-                            <p class="text-gray-500 text-sm">{{ experience.dateEnd }}   </p>
-                            <h2 class="tracking-wider text-black">{{experience.company}} </h2>
+                            <p class="text-gray-500 text-sm dark:text-slate-300">{{ experience.dateEnd }}   </p>
+                            <h2 class="tracking-wider text-black dark:text-indigo-300">{{experience.company}} </h2>
                         </span>
-                     <h3 class="text-lg font-bold text-start mt-2">{{experience.cargo}} </h3>
-                    <p class="text-gray-700 tracking-wider text-base text-justify mt-2">{{ experience.description}}</p> 
+                     <h3 class="text-lg font-bold text-start mt-2 dark:text-white">{{experience.cargo}} </h3>
+                    <p class="text-gray-700 tracking-wider text-base text-justify mt-2 dark:text-slate-400">{{ experience.description}}</p> 
                      
                   </div>
                 </nz-timeline-item>

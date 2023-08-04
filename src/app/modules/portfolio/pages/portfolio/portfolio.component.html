@@ -5,7 +5,7 @@
             <h1
                 class="text-7xl  text-center text-indigo-500 font-bold tracking-wide  max-sm:text-center max-sm:text-4xl">
                 Portaflio.</h1>
-            <nav class=" flex justify-center gap-5 mt-10">
+            <nav class=" flex justify-center gap-5 mt-10 dark:text-white">
                 <button type="button" (click)="btnAll()"
                     [ngStyle]="{'background': currentFilter  == 'all' ? backround :'','color': currentFilter == 'all' ? color: '' }"
                     class="rounded-md shadow-lg border-[2px] border-indigo-400 py-1 px-2 font-semibold hover:shadow-xl hover:bg-indigo-400 hover:text-white outline-1">All</button>
@@ -26,7 +26,7 @@
             <div *ngIf="portfolios().length > 0 else: noEncontrado" class=" flex flex-wrap justify-center gap-5 max-lg:gap-2">
 
                 <div *ngFor="let portfolio of portfolios()"
-                    class="card flex flex-col rounded-md shadow-md hover:shadow-xl ">
+                    class=" dark:bg-slate-700 card flex flex-col rounded-md shadow-md hover:shadow-xl ">
                     <img class="image rounded-t-md" [src]="portfolio.urlImages" [alt]="">
 
                     <div class="content">
@@ -45,7 +45,7 @@
                             <img *ngFor="let svg of portfolio.urlIcon" [src]="svg.url" [alt]="svg.name" nz-tooltip
                                 [nzTooltipTitle]="svg.name" width="50" height="50">
                         </span>
-                        <i class="text-lg text-indigo-500 cursor-pointer pi pi-external-link" nz-tooltip
+                        <i class="text-lg dark:text-white text-indigo-500 cursor-pointer pi pi-external-link" nz-tooltip
                             nzTooltipTitle="Visitar la web"><a [href]="portfolio.url" target="_blank"></a></i>
                     </div>
                 </div>
@@ -60,7 +60,7 @@
             <ng-template #noEncontrado>
                 <div class="flex flex-col justify-center items-center gap-5">
                     <h1 class="text-5xl font-bold text-indigo-400">Ups..</h1>
-                    <strong class="text-3xl font-semibold text-slate-600">No se Encontraron para este
+                    <strong class="text-3xl font-semibold text-slate-600 dark:text-slate-400">No se Encontraron para este
                         Portaflios</strong>
                 </div>
 

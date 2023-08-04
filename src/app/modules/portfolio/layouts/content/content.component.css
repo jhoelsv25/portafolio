@@ -1,9 +1,4 @@
-.header-transparent {
-    background-color: transparent;
-    /* Otros estilos para el header transparente */
-  }
-  
-  /* Estilos adicionales para el header con fondo cuando se desplaza */
+
   header {
     background-color: #fff;
     border-bottom: 1px solid  #ececec ;

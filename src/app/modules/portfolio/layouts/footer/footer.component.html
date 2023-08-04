@@ -1,18 +1,18 @@
-<div class=" items-center justify-center">
+<div class=" items-center justify-center dark:bg-slate-800">
     <div class="flex justify-center">
         <ul class=" flex xl:gap-8 gap-3 ">
-            <li *ngFor="let item of items()" class=" font-semibold text-slate-600 hover:text-gray-700"><a
+            <li *ngFor="let item of items()" class=" font-semibold text-slate-600 dark:text-white hover:text-gray-700"><a
                     [routerLink]="[item.url]" routerLinkActive="actived"> {{ item.name}}</a></li>
 
         </ul>
     </div>
     <div class="flex gap-5 w-full justify-center my-8">
-        <span *ngFor="let social of socials()" class="text-2xl text-slate-500 hover:text-slate-700  cursor-pointer" 
+        <span *ngFor="let social of socials()" class="text-2xl text-slate-500 hover:text-slate-700 dark:text-white  cursor-pointer" 
              > <a [nzTooltipTitle]="social.name" nzTooltipPlacement="bottom"  nz-tooltip [href]="social.url" target="_blank" [ngClass]="social.icon"></a></span>
 
     </div>
     <div class="flex justify-center">
-        <cite class="text-slate-500 text-sm"> &copy; {{ newDate }} Jhoel Silvestre - Todos los derechos reservados
+        <cite class="text-slate-500 text-sm dark:text-slate-400"> &copy; {{ newDate }} Jhoel Silvestre - Todos los derechos reservados
         </cite>
     </div>
     
