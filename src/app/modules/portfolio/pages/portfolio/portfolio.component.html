@@ -27,7 +27,7 @@
 
                 <div *ngFor="let portfolio of portfolios()"
                     class=" dark:bg-slate-700 card flex flex-col rounded-md shadow-md hover:shadow-xl ">
-                    <img class="image rounded-t-md" [src]="portfolio.urlImages" [alt]="">
+                    <img class="image rounded-t-md" [src]="portfolio.urlImages" [alt]="portfolio.title">
 
                     <div class="content">
 
@@ -72,10 +72,3 @@
     </div>
 
 </div>
-
-<ng-template #customPreviewTemplate let-data="data" let-index="index">
-    <div class="flex items-center justify-center h-screen">
-        <img [src]="data.src" [width]="data.width" [height]="data.height" [alt]="data.alt"
-            class="max-h-full max-w-full">
-    </div>
-</ng-template>

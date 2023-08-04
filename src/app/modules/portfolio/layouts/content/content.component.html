@@ -7,8 +7,8 @@
 <footer class="w-full mb-4 mt-10 dark:bg-slate-800">
     <portfolio-footer></portfolio-footer>
 </footer>
-<button nz-tooltip [nzTooltipTitle]="titleMode " class="w-10 h-10 fixed bottom-14 right-5 text-xl  rounded-full shadow-xl dark:text-white dark:shadow-2xl hover:bg-sky-400 hover:text-white ">
+<a nz-tooltip [nzTooltipTitle]="titleMode " class="w-10 h-10 fixed bottom-14 right-5 text-xl  rounded-full shadow-xl dark:text-white dark:shadow-2xl hover:bg-sky-400 hover:text-white ">
     <i (click)="darkMode()" [class]="isDarkMode ? 'pi pi-moon' : 'pi pi-sun'"></i>
-</button>
+</a>
 
 <nz-back-top></nz-back-top>

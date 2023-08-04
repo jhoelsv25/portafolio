@@ -25,7 +25,7 @@ export class PortfolioService {
       urlImages:'assets/img/fondo.webp',
       urlCod:'github',
       category:'web',
-      url:'',
+      url:'https://github.com/jhoelsv25/ToDo',
     },
     {
       title:'Mapas con Marcadores',
@@ -36,7 +36,7 @@ export class PortfolioService {
       urlImages:'assets/img/fondo.webp',
       urlCod:'github',
       category:'develop',
-      url:'',
+      url:'https://github.com/jhoelsv25/maps',
     },
     {
       title:'Carrito de compras',
@@ -47,7 +47,7 @@ export class PortfolioService {
       urlImages:'assets/img/fondo.webp',
       urlCod:'github',
       category:'web',
-      url:'',
+      url:'https://github.com/jhoelsv25/Ecommerce',
     }
   ]
 
