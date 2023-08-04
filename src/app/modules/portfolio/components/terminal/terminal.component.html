@@ -1,0 +1,36 @@
+<div class="w-full  bg-white rounded-lg shadow-md ">
+
+    <div class="bg-white h-6 rounded-t-lg flex items-center justify-start border-b-[1px] ">
+        <div class="h-3 w-3 mx-1 rounded-full bg-red-500"></div>
+        <div class="h-3 w-3 mx-1 rounded-full bg-yellow-400"></div>
+        <div class="h-3 w-3 mx-1 rounded-full bg-green-500"></div>
+        <div class="text-gray-500 px-2 index">index.ts</div>
+    </div>
+
+    <div class="w-full flex   bg-white rounded-b-lg text-white text-sm  md:h-64 overflow-auto">
+        <ul class="flex flex-col items-center gap-2 text-slate-800 font-semibold h-full bg-slate-400 w-5 ">
+        </ul>
+        <div class="flex flex-col px-2 gap-2 ">
+            <code
+                class=" flex text-emerald-600 font-semibold text-base gap-1">  <p class="text-indigo-600">import</p>  <strong class="text-red-500"> Component</strong>  from <code class="text-cyan-500">'@angular/core';</code>
+            </code>
+            <code class="flex text-slate-900 font-semibold text-base ">
+                @<p class="text-amber-400">Component <span class="text-slate-900">(&#123;</span></p>
+            </code>
+            <code *ngFor="let item of codeLines" class="flex pl-2 text-slate-900 font-semibold text-base ">
+                <p class="text-red-500">{{item.name}}</p> {{item.cod}}
+                
+            </code>
+            
+            <code class="flex  text-slate-900 font-semibold text-base ">
+                &#125;)
+            </code>
+            <code class="flex  text-slate-900 font-semibold text-base gap-1 ">
+                <p class="text-indigo-600">export</p>  <strong class="text-red-500"> class</strong>  Component <code class="text-cyan-500"> &#123; &#125;</code>
+
+            </code>
+        </div>
+
+    </div>
+
+</div>

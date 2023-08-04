@@ -1,6 +1,27 @@
 .title{
     font-family: 'Staatliches', cursive;
 }
-/* h3{
-    font-family: 'Pontano Sans', sans-serif;
-} */
+p{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+
+.typing-text {
+    overflow: hidden; 
+    white-space: nowrap; 
+    /* border-right: 1px solid black; */
+    animation: typing 5s steps(30) both; 
+  }
+  
+  @keyframes typing {
+    from { width: 0; } 
+    to { width: 100%; } 
+  }
+
+  @media not all and (min-width: 1024px) {
+    app-view{
+       position: initial;
+        left: 0 ;
+        top: 0;
+    }
+}

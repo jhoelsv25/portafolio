@@ -15,6 +15,8 @@ import { ServicesComponent } from './pages/services/services.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { SkillComponent } from './pages/skill/skill.component';
 import { ZorroModule } from 'src/app/shared/zorro.module';
+import { TerminalComponent } from './components/terminal/terminal.component';
+import { ViewComponent } from './components/view/view.component';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import { ZorroModule } from 'src/app/shared/zorro.module';
     AbautComponent,
     ServicesComponent,
     HomePageComponent,
-    SkillComponent
+    SkillComponent,
+    TerminalComponent,
+    ViewComponent
   ],
   imports: [
     CommonModule,

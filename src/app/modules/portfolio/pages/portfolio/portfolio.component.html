@@ -23,10 +23,10 @@
         </div>
         <div class="flex justify-center my-10">
 
-            <div *ngIf="portfolios().length > 0 else: noEncontrado" class=" flex flex-wrap justify-center gap-5">
+            <div *ngIf="portfolios().length > 0 else: noEncontrado" class=" flex flex-wrap justify-center gap-5 max-lg:gap-2">
 
                 <div *ngFor="let portfolio of portfolios()"
-                    class="card flex flex-col rounded-md shadow-md hover:shadow-xl">
+                    class="card flex flex-col rounded-md shadow-md hover:shadow-xl ">
                     <img class="image rounded-t-md" [src]="portfolio.urlImages" [alt]="">
 
                     <div class="content">

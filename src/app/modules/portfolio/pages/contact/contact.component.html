@@ -1,4 +1,4 @@
-<div class="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
+<div class="isolate bg-white px-6 py-10 sm:pt-32 lg:px-8">
     <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
         aria-hidden="true">
         <div class="relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#d185a5] to-[#9089fc] opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]"
@@ -6,49 +6,88 @@
         </div>
     </div>
     <div class="mx-auto max-w-2xl text-center">
+        <h3 class="text-6xl text-indigo-500 text-center font-bold my-5 tracking-tight   max-sm:text-center max-sm:text-4xl">
+            Contacto.</h3>
         <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Rellenar el formulario </h2>
         <p class="mt-2 text-lg leading-8 text-gray-600">Completa todos los campos y enviame un mensaje.
         </p>
     </div>
+    
 
-    <form class="mx-auto mt-16 max-w-xl sm:mt-20">
-        <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-            <div>
-                <label for="name" class="block text-sm font-semibold leading-6 text-gray-900">Nombre</label>
-                <div class="mt-2.5">
-                    <input type="text" name="name" id="name" autocomplete="Nombre"
-                        class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6">
-                </div>
+    
+</div>
+<div class="flex justify-center ">
+    <div class="grid grid-cols-2 container max-lg:grid-cols-1 xl:w-[1024px] max-lg:w-full">
+        <div class="px-10 max-md:px-8">
+            <div class="flex flex-col gap-2">
+              <span class=" border-[2px] grid place-content-center rounded-md w-10 py-3 px-2">
+                <i class="pi pi-map-marker"></i>
+              </span>
+              <h1 class=" typing-text text-2xl font-bold">Mi Ubicacion:</h1>
+              <p class="text-gray-500 tracking-widest text-justify mb-4">
+                Junin - Huancayo
+              </p>
             </div>
-            <div>
-                <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">Correo</label>
-                <div class="mt-2.5">
-                    <input type="email" name="email" id="email" autocomplete="family-name"
-                        class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6">
-                </div>
+            <div class="flex flex-col gap-2 mt-5">
+              <span class=" border-[2px] grid place-content-center rounded-md w-10 py-3 px-2">
+                <i class="pi pi-google"></i>
+              </span>
+              <h1 class="typing-text text-2xl font-bold">Correo electronico:</h1>
+              <p class=" text-gray-500 tracking-widest text-justify mb-4">
+                jhoel.sv25@gmail.com
+              </p>
             </div>
-
-            <div class="sm:col-span-2">
-                <label for="asunto" class="block text-sm font-semibold leading-6 text-gray-900">Asunto</label>
-                <div class="mt-2.5">
-                    <input type="text" name="Asunto" id="asunto" autocomplete="Asunto"
-                        class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6">
-                </div>
-            </div>
-
-            <div class="sm:col-span-2">
-                <label for="message" class="block text-sm font-semibold leading-6 text-gray-900">Mensaje</label>
-                <div class="mt-2.5">
-                    <textarea name="message" id="message" rows="4"
-                        class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"></textarea>
-                </div>
-            </div>
-
+            <div class="flex flex-col gap-2 mt-5">
+                <span class=" border-[2px] grid place-content-center rounded-md w-10 py-3 px-2">
+                  <i class="pi pi-mobile"></i>
+                </span>
+                <h1 class="typing-text text-2xl font-bold">Telefono:</h1>
+                <p class=" text-gray-500 tracking-widest text-justify mb-4">
+                  +51 918506768
+                </p>
+              </div>
+    
+            
         </div>
-        <div class="mt-10">
-            <button type="submit" [disabled]=""
-                class="block w-full rounded-md bg-indigo-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Enviar
-                Mensaje</button>
-        </div>
-    </form>
+        <form class="mx-auto  max-w-xl  max-lg:w-full max-lg:px-10 max-lg:mt-5">
+            <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+                <div>
+                    <label for="name" class="block text-sm font-semibold leading-6 text-gray-900">Nombre</label>
+                    <div class="mt-2.5">
+                        <input type="text" name="name" id="name" autocomplete="Nombre"
+                            class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6">
+                    </div>
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">Correo</label>
+                    <div class="mt-2.5">
+                        <input type="email" name="email" id="email" autocomplete="family-name"
+                            class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6">
+                    </div>
+                </div>
+    
+                <div class="sm:col-span-2">
+                    <label for="asunto" class="block text-sm font-semibold leading-6 text-gray-900">Asunto</label>
+                    <div class="mt-2.5">
+                        <input type="text" name="Asunto" id="asunto" autocomplete="Asunto"
+                            class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6">
+                    </div>
+                </div>
+    
+                <div class="sm:col-span-2">
+                    <label for="message" class="block text-sm font-semibold leading-6 text-gray-900">Mensaje</label>
+                    <div class="mt-2.5">
+                        <textarea name="message" id="message" rows="4"
+                            class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"></textarea>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="mt-10">
+                <button type="submit" [disabled]=""
+                    class="block w-full rounded-md bg-indigo-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Enviar
+                    Mensaje</button>
+            </div>
+        </form> 
+    </div>
 </div>
