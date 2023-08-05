@@ -8,7 +8,7 @@ p{
 
 ::ng-deep .ant-timeline.ant-timeline-label .ant-timeline-item-label{
 
-    font-weight: bold ;
+    font-weight: 500 ;
     color: darkgrey;
     font-family: 'Staatliches', cursive;
     letter-spacing: 1px;

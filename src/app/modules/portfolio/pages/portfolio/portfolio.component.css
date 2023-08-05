@@ -36,17 +36,6 @@
 h2{
     font-family: 'Staatliches', cursive;
 }
-/*
-.content h2 {
-  font-size: 35px;
-  margin: 15px;
-  font-weight: 700;
-}
-
-.content h3 {
-  font-size: 23px;
-  text-transform: uppercase;
-} */
 
 .card:hover .content {
   opacity: 1;

@@ -1,4 +1,6 @@
-
+.header-transparent{
+  background-color: transparent;
+}
   header {
     background-color: #fff;
     border-bottom: 1px solid  #ececec ;

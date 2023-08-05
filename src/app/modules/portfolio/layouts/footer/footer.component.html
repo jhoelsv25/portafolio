@@ -1,7 +1,7 @@
 <div class=" items-center justify-center dark:bg-slate-800">
     <div class="flex justify-center">
         <ul class=" flex xl:gap-8 gap-3 ">
-            <li *ngFor="let item of items()" class=" font-semibold text-slate-600 dark:text-white hover:text-gray-700"><a
+            <li *ngFor="let item of items()" class=" font-semibold text-sm text-slate-700 dark:text-white hover:text-gray-700"><a
                     [routerLink]="[item.url]" routerLinkActive="actived"> {{ item.name}}</a></li>
 
         </ul>
