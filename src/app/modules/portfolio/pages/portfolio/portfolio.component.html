@@ -27,7 +27,7 @@
 
                 <div *ngFor="let portfolio of portfolios()"
                     class=" dark:bg-slate-700 card flex flex-col rounded-md shadow-md hover:shadow-xl ">
-                    <img class="image rounded-t-md" [ngSrc]="portfolio.urlImages" [alt]="portfolio.title" width="380px" height="250px">
+                    <img class="image rounded-t-md" [ngSrc]="portfolio.urlImages" [alt]="portfolio.title" fill="true"  loading="lazy" >
 
                     <div class="content">
 
