@@ -1,16 +1,19 @@
-<header class="w-full py-3 dark:bg-slate-800 h-full   sticky top-0 z-[999] transition-all"
-    [ngClass]="{'header-transparent': isHeaderTransparent}">
-    <app-header/>
+<header
+  class="w-full dark:bg-slate-800 h-full fixed top-0 z-[999] transition-all"
+  [ngClass]="{ 'header-transparent': isHeaderTransparent }"
+>
+  <app-header />
 </header>
-<main class="w-full dark:bg-slate-800">
-    <router-outlet />
+<main class="w-full mt-12 dark:bg-slate-800">
+  <router-outlet />
 </main>
-<footer class="w-full mb-4 mt-10 dark:bg-slate-800">
-    <app-footer />
+<footer class="w-full dark:bg-slate-800">
+  <app-footer />
 </footer>
-<span 
-    class="w-10 h-10 fixed bottom-14 right-5 text-xl flex justify-center items-center  rounded-full shadow-xl dark:text-white dark:shadow-2xl hover:bg-sky-400 hover:text-white ">
-    <i (click)="darkMode()" [class]="isDarkMode ? 'pi pi-moon' : 'pi pi-sun'"></i>
+<span
+  class="w-10 h-10 fixed bottom-[54px] right-5 text-xl flex justify-center items-center rounded-full shadow-xl dark:text-slate-900 dark:shadow-2xl hover:bg-sky-400 hover:text-white dark:bg-slate-300 "
+>
+  <i (click)="darkMode()" [class]="isDarkMode ? 'pi pi-moon' : 'pi pi-sun'"></i>
 </span>
 
 <nz-back-top></nz-back-top>
