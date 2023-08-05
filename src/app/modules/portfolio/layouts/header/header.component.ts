@@ -2,7 +2,7 @@ import { Component, ElementRef, HostListener, ViewChild, computed, inject } from
 import { HeaderService } from '../../services/header.service';
 
 @Component({
-  selector: 'portfolio-header',
+  selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })

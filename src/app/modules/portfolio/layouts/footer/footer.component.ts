@@ -4,7 +4,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { RedesSocialsService } from '../../services/redes-socials.service';
 
 @Component({
-  selector: 'portfolio-footer',
+  selector: 'app-footer',
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css']
 })
