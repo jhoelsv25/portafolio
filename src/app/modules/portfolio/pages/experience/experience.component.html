@@ -1,4 +1,4 @@
-<div class="flex justify-center">
+<div class="flex flex-col items-center px-2 justify-center">
 
     <div class="container flex justify-center flex-col  ">
         <div class="flex container flex-col my-10">
@@ -9,7 +9,7 @@
                 Diseño web, ERP Odoo y desarrollo web profesional a medida. </p>
         </div>
         <div class="flex justify-center mt-10">
-            <nz-timeline nzMode="alternate" class="xl:w-9/12 ">
+            <nz-timeline nzMode="alternate" class="xl:w-9/12 p-2 ">
                 <nz-timeline-item *ngFor="let experience of experiences()" nzColor="gray" [nzLabel]="experience.dateStart"  >
                     <div class="bg-white dark:bg-slate-700  p-6 rounded-lg shadow-md  hover:shadow-xl">
                         <span class="flex justify-between">
@@ -26,6 +26,9 @@
         </div>
         
         
+    </div>
+    <div class="container flex justify-center flex-col ">
+        <app-studio/>
     </div>
     
 </div>

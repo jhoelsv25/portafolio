@@ -9,7 +9,7 @@
                 Diseño web, ERP Odoo y desarrollo web profesional a medida. </p>
         </div>
         <div class="flex justify-center mt-10">
-            <nz-timeline nzMode="alternate" class="xl:w-9/12 ">
+            <nz-timeline nzMode="alternate" class="xl:w-9/12 p-2">
                 <nz-timeline-item *ngFor="let studio of studios()" nzColor="gray" [nzLabel]="studio.dateStart"  >
                     <div class="bg-white dark:bg-slate-700  p-6 rounded-lg shadow-md hover:shadow-2xl ">
                         <span class="flex justify-between">
@@ -33,11 +33,6 @@
     
 </div>
 
-<ng-template #customPreviewTemplate let-data="data" let-index="index">
-    <div class="flex items-center justify-center h-screen">
-      <img [src]="data.src" [width]="data.width" [height]="data.height" [alt]="data.alt" class="max-h-full max-w-full">
-    </div>
-  </ng-template>
 
   
   
