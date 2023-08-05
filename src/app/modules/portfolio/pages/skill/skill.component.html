@@ -1,8 +1,10 @@
 <div class="container flex flex-col items-center mt-10">
-    <h2 class="max-sm:text-center text-xl tracking-widest text-slate-500 dark:text-white">CON CONOCIMIENTOS EN LOS SIGUIENTES TECNOLOGIAS.</h2>
-   
+    <h2 class="max-sm:text-center text-xl tracking-widest text-slate-500 dark:text-white">CON CONOCIMIENTOS EN LOS
+        SIGUIENTES TECNOLOGIAS.</h2>
+
     <div class="flex flex-wrap xl:w-8/12  mt-10 justify-center gap-10">
-        <img *ngFor="let skill of skills" nz-tooltip [nzTooltipTitle]="skill.name" nzTooltipPlacement="bottom" class="flex flex-wrap gap-5 "  [src]="skill.url" [alt]="skill.name">
+        <img *ngFor="let skill of skills" nz-tooltip [nzTooltipTitle]="skill.name" nzTooltipPlacement="bottom"
+            class="flex flex-wrap gap-5 " [ngSrc]="skill.url" [alt]="skill.name" width="100" height="100">
 
     </div>
 </div>

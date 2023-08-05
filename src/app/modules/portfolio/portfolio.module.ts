@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 
 import { PortfolioRoutingModule } from './portfolio-routing.module';
 import { HeaderComponent } from './layouts/header/header.component';
@@ -39,7 +39,8 @@ import { ViewComponent } from './components/view/view.component';
   imports: [
     CommonModule,
     PortfolioRoutingModule,
-    ZorroModule
+    NgOptimizedImage,
+    ZorroModule,
   ]
 })
 export class PortfolioModule { }
