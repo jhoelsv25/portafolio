@@ -11,9 +11,10 @@
   <app-footer />
 </footer>
 <span
-  class="w-10 h-10 fixed bottom-[54px] right-5 text-xl flex justify-center items-center rounded-full shadow-xl dark:text-slate-900 dark:shadow-2xl hover:bg-sky-400 hover:text-white dark:bg-slate-300 "
+
+  class="w-10 h-10 fixed bottom-[54px] cursor-pointer right-5 text-xl flex justify-center items-center rounded-full shadow-xl dark:text-slate-900 dark:shadow-2xl hover:bg-sky-400 hover:text-white dark:bg-slate-300 "
 >
-  <i (click)="darkMode()" [class]="isDarkMode ? 'pi pi-moon' : 'pi pi-sun'"></i>
+  <i nz-tooltip [nzTooltipTitle]="titleMode" (click)="darkMode()" [class]="isDarkMode ? 'pi pi-moon' : 'pi pi-sun'"></i>
 </span>
 
 <nz-back-top></nz-back-top>
