@@ -17,6 +17,8 @@
 
     <div class="flex gap-3 max-sm:flex-col max-sm:w-full">
         <button
+            (click)="download()"
+            [routerLink]="['/contact']"
             class=" w-52  text-lg justify-center flex items-center gap-2 rounded-lg bg-gray-600 hover:bg-gray-400 text-white font-semibold py-2.5 px-4 max-sm:w-full">
 
             Contactar

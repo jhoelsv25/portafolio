@@ -9,4 +9,9 @@ import { RedesSocialsService } from '../../services/redes-socials.service';
 export class HomePageComponent {
   private  socialService = inject(RedesSocialsService)
   public socials = computed(()=>this.socialService.allSocials)
+
+
+  download(){
+
+  }
 }
