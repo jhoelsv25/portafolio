@@ -22,8 +22,8 @@ export class PortfolioService {
         { name:'Angular', url:'assets/svg/angular.svg' },
         { name:'TypeScript', url:'assets/svg/typescript.svg' },
       ],
-      urlImages:'assets/img/fondo.webp',
-      urlCod:'github',
+      urlImages:'assets/img/todo.webp',
+      urlCod:'https://github.com/jhoelsv25/ToDo',
       category:'web',
       url:'https://github.com/jhoelsv25/ToDo',
     },
@@ -34,9 +34,20 @@ export class PortfolioService {
         { name:'TypeScript', url:'assets/svg/typescript.svg' },
       ],
       urlImages:'assets/img/fondo.webp',
-      urlCod:'github',
+      urlCod:'https://github.com/jhoelsv25/maps',
       category:'develop',
       url:'https://github.com/jhoelsv25/maps',
+    },
+    {
+      title:'Login',
+      urlIcon:[
+        { name:'Angular', url:'assets/svg/angular.svg' },
+        { name:'TypeScript', url:'assets/svg/typescript.svg' },
+      ],
+      urlImages:'assets/img/login.webp',
+      urlCod:'https://github.com/jhoelsv25/login/tree/master',
+      category:'web',
+      url:'https://github.com/jhoelsv25/login/tree/master',
     },
     {
       title:'Carrito de compras',
@@ -44,11 +55,21 @@ export class PortfolioService {
         { name:'Angular', url:'assets/svg/angular.svg' },
         { name:'TypeScript', url:'assets/svg/typescript.svg' },
       ],
-      urlImages:'assets/img/fondo.webp',
-      urlCod:'github',
+      urlImages:'assets/img/cart.webp',
+      urlCod:'https://github.com/jhoelsv25/cart',
+      category:'develop',
+      url:'https://github.com/jhoelsv25/cart',
+    },{
+      title:'Gifs',
+      urlIcon:[
+        { name:'Angular', url:'assets/svg/angular.svg' },
+        { name:'TypeScript', url:'assets/svg/typescript.svg' },
+      ],
+      urlImages:'assets/img/gifs.webp',
+      urlCod:'https://github.com/jhoelsv25/gifs',
       category:'web',
-      url:'https://github.com/jhoelsv25/Ecommerce',
-    }
+      url:'https://github.com/jhoelsv25/gifs',
+    },
   ]
 
   private portflio = signal<Portfolio[]>(this.data)
