@@ -8,7 +8,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
 export class ContentComponent implements OnInit {
   public isHeaderTransparent = true;
   public isDarkMode = false;
-  public titleMode: string = 'Cambiar de modo';
+  public titleMode: string = '';
   private darkModeTitle: string = 'ligth';
 
   @HostListener('window:scroll', [])

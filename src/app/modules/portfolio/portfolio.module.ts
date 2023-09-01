@@ -17,6 +17,7 @@ import { SkillComponent } from './pages/skill/skill.component';
 import { ZorroModule } from 'src/app/shared/zorro.module';
 import { TerminalComponent } from './components/terminal/terminal.component';
 import { ViewComponent } from './components/view/view.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -41,6 +42,7 @@ import { ViewComponent } from './components/view/view.component';
     PortfolioRoutingModule,
     NgOptimizedImage,
     ZorroModule,
+    ReactiveFormsModule
   ]
 })
 export class PortfolioModule { }

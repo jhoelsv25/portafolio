@@ -3,14 +3,16 @@
 }
   header {
     background-color: #fff;
-    border-bottom: 1px solid  #ececec ;
+    /* border-bottom: 1px solid  #ececec ; */
+    height: 50px;
+    
   }
 
   ::ng-deep .ant-back-top-content {
     position: inherit;
     bottom: 3.4rem !important;
     right: 4rem;
-    background-color: rgb(201, 200, 200);
+    background-color: #CBD5E1;
     color: rgb(56, 56, 56);
   }
   ::ng-deep .ant-back-top-content:hover{

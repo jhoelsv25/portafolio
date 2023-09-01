@@ -9,9 +9,9 @@
                 Diseño web, ERP Odoo y desarrollo web profesional a medida. </p>
         </div>
         <div *ngFor="let service of services()"
-            class=" dark:bg-slate-700  px-5 flex flex-col justify-evenly w-80 h-[30vh] rounded-lg shadow-lg hover:shadow-xl max-sm:h-[45vh]">
+            class=" dark:bg-slate-700  px-5 flex flex-col justify-evenly w-80 h-[40vh] max-lg:h-[30vh] rounded-lg shadow-lg hover:shadow-xl max-sm:h-[40vh]">
             <div class="flex justify-center">
-                <img [ngSrc]="service.urlImage" [alt]="service.title"  height="70" width="70" loading="lazy" class="opacity-60 hover:opacity-100">
+                <img  [ngSrc]="service.urlImage" [alt]="service.title"  height="70" width="70" loading="lazy" class="opacity-60 hover:opacity-100 dark:shadow-2xl">
             </div>
     
             <h1 class="text-xl font-bold text-center text-black dark:text-white ">{{ service.title}} </h1>
