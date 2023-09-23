@@ -23,9 +23,9 @@ export class PortfolioService {
         { name:'TypeScript', url:'assets/svg/typescript.svg' },
       ],
       urlImages:'assets/img/todo.webp',
-      urlCod:'https://github.com/jhoelsv25/ToDo',
+      urlCod:'https://gitlab.com/jhoel.sv25/task',
       category:'web',
-      url:'https://github.com/jhoelsv25/ToDo',
+      url:'https://todo-jhoel.netlify.app/#/task/task-list',
     },
     {
       title:'Mapas con Marcadores',
@@ -38,7 +38,7 @@ export class PortfolioService {
       category:'develop',
       url:'https://github.com/jhoelsv25/maps',
     },
-    {
+{
       title:'Login',
       urlIcon:[
         { name:'Angular', url:'assets/svg/angular.svg' },
