@@ -22,7 +22,7 @@ export class PortfolioService {
         { name:'Angular', url:'assets/svg/angular.svg' },
         { name:'TypeScript', url:'assets/svg/typescript.svg' },
       ],
-      urlImages:'assets/img/todo.webp',
+      urlImages:'assets/img/task.webp',
       urlCod:'https://gitlab.com/jhoel.sv25/task',
       category:'web',
       url:'https://todo-jhoel.netlify.app/#/task/task-list',
