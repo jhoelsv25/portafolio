@@ -35,8 +35,9 @@
 
                         <h2 class=" text-white  text-base">{{portfolio.title }}</h2>
                         <div class="flex gap-5">
+                            <a [href]="portfolio.urlCod" target="_blank">
                             <i class="text-white text-xl hover:text-cyan-300 pi pi-github" nz-tooltip
-                                nzTooltipTitle="Ir al codigo"><a [href]="portfolio.urlCod" target="_blank"></a></i>
+                                nzTooltipTitle="Ir al codigo"></i></a>
                             <i (click)="preview(portfolio.urlImages)"
                                 class="text-white text-xl hover:text-cyan-300 pi pi-eye" nz-tooltip
                                 nzTooltipTitle="Pre Visualizar"></i>
@@ -47,8 +48,9 @@
                             <img *ngFor="let svg of portfolio.urlIcon" [src]="svg.url" [alt]="svg.name" nz-tooltip
                                 [nzTooltipTitle]="svg.name" width="50" height="50">
                         </span>
+                        <a [href]="portfolio.url" target="_blank">
                         <i class="text-lg dark:text-white text-indigo-500 cursor-pointer pi pi-external-link" nz-tooltip
-                            nzTooltipTitle="Visitar la web"><a [href]="portfolio.url" target="_blank"></a></i>
+                            nzTooltipTitle="Visitar la web"></i></a>
                     </div>
                 </div>
 
